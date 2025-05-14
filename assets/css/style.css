@@ -37,7 +37,8 @@
   }
   
   .hero {
-    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    background: url('../images/drapeau\ maroc.jpg');
+    background-position: center;
     padding: 50px 10px;
     text-align: center;
     color: rgb(14, 14, 14);
