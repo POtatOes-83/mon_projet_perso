@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/maroc.png">
-  <title>Decouvrir le Maroc</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/maroc.png">
+  <title>Découvrir le Maroc</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-   <header class="root">
+  <header class="root">
     <div class="headerlogo">
       <img src="assets/images/maroc.png" class="logo" alt="Logo de mon site">
-    <h1>المغرب</h1>
+      <h1>المغرب</h1>
     </div>
     <nav>
       <ul>
@@ -27,21 +27,20 @@
   </header>
 
   <section class="hero">
-    <!-- <img src="assets/images/drapeau maroc.jpg" width="300" height="200" alt="maroc"> -->
-    <h2>Besoin de changer d'air cet été?</h2>
+    <h2>Besoin de changer d'air cet été ?</h2>
     <p>Venez découvrir l'un des plus beaux pays d'Afrique.</p>
-    <a href="#" class="btn">Je visites!</a>
+    <button id="btn-scroll" class="btn">Je visites!</button>
   </section>
 
   <section class="video-promo">
-    <h2> Le bonheur est dans la simplicité</h2>
+    <h2>Le bonheur est dans la simplicité</h2>
     <video controls>
       <source src="assets/videos/folklor.mp4" type="video/mp4">
     </video>
   </section>
 
-  <section class="produits">
-    <h2>Les plus visités </s></h2>
+  <section class="produits fade-in" id="visites">
+    <h2>Les plus visités</h2>
     <div class="grid">
       <div class="produit">
         <img src="assets/images/agadir-3750178_1280.jpg" alt="agadir">
@@ -59,8 +58,19 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Découvir le Maroc. Tous droits réservés.</p>
+    <p>&copy; 2025 Découvrir le Maroc. Tous droits réservés.</p>
   </footer>
+
+  <!-- Script pour scroll fluide en JS avec id -->
+  <script>
+    document.getElementById("btn-scroll").addEventListener("click", function () {
+      const section = document.getElementById("visites");
+      section.scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+
+  <script src="assets/js/scroll.js"></script>
+
 
 </body>
 
